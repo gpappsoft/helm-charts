@@ -1,6 +1,6 @@
 > [!Important] 
 > This is a first version of the chart, which will deploy a basic privacyIDEA stack. 
-> Do not use for production!
+> No configmaps and no secrets. Do not use for production!
 
 ---
 
@@ -33,7 +33,9 @@ helm install privacyidea ./privacyidea-chart
 This will deploy the following components:
 - PrivacyIDEA application
 - MariaDB database
-- Redis cache
+- Radius with privacyIDEA plugin (optional - disabled by default)
+- Redis cache (optional - disabled by default)
+
 
 #### **3. Verify the Deployment**
 Check if the pods are running:
@@ -85,9 +87,31 @@ Now, you can access PrivacyIDEA at:
 http://privacyidea.local
 ```
 
+
+### **5. Enable Radius with privacyIDEA plugin**
+
+Edit ```values.yaml``` 
+
+```yaml
+...
+# Enable or disable radius
+radius:
+  enabled: true
+```
+
+### **6. Enable Redis**
+
+Edit ```values.yaml``` 
+
+```yaml
+...
+# Enable or disable redis
+redis:
+  enabled: true
+```
 ---
 
-### **5. Clean Up**
+### **7. Clean Up**
 When you're done testing, you can delete the Helm release:
 ```bash
 helm uninstall privacyidea
@@ -110,7 +134,8 @@ minikube delete
    ```bash
    kubectl logs <pod-name>
    ```
-2. **Database connection issues**: Ensure that the MariaDB pod is running and that the connection string in the `privacyidea.cfg` file is correct.
+2. **Database connection issues**: Ensure that the MariaDB pod is running.
+
 3. **Persistent Volume issues**: If you encounter issues with persistent volumes, ensure that Minikube's storage class is configured correctly. You can check the persistent volumes and claims:
    ```bash
    kubectl get pv
@@ -119,4 +144,4 @@ minikube delete
 
 ---
 
-By following these steps, you can successfully deploy the PrivacyIDEA stack with MariaDB and Redis on Minikube using the Helm chart. This setup is ideal for local development and testing.
+
