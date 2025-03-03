@@ -99,7 +99,7 @@ radius:
   enabled: true
 ```
 
-### **6. Enable Radius with privacyIDEA plugin**
+### **6. Enable Redis**
 
 Edit ```values.yaml``` 
 
