@@ -3,7 +3,18 @@ entries:
   privacyidea:
   - apiVersion: v2
     appVersion: "3.11"
-    created: "2025-03-02T16:36:17.533336982+01:00"
+    created: "2025-03-03T07:39:25.102988529+01:00"
+    description: A Helm chart for deploying PrivacyIDEA with MariaDB database and
+      optional radius and redis.
+    digest: 942f3e54d90d75d507c9cb669513e1d082519786a510fedff180497bb2b146c0
+    icon: https://www.privacyidea.org/wp-content/uploads/2016/06/privacyIDEA-240px@2x.png
+    name: privacyidea
+    urls:
+    - https://gpappsoft.github.io/helm-charts/privacyidea-1.0.2.tgz
+    version: 1.0.2
+  - apiVersion: v2
+    appVersion: "3.11"
+    created: "2025-03-03T07:39:25.102768802+01:00"
     description: A Helm chart for deploying PrivacyIDEA with MariaDB and Redis
     digest: f1d96cd9d6edefc7e9094a2e7645eaf27732dc70d7eb2242c284da4dc3d068cf
     icon: https://www.privacyidea.org/wp-content/uploads/2016/06/privacyIDEA-240px@2x.png
@@ -13,7 +24,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: "3.11"
-    created: "2025-03-02T16:36:17.532499213+01:00"
+    created: "2025-03-03T07:39:25.102549085+01:00"
     description: A Helm chart for deploying PrivacyIDEA with MariaDB and Redis
     digest: 674d54c97af5e05041e6f46c663087247bbe701e2572707c3e318c847019233b
     icon: https://www.privacyidea.org/wp-content/uploads/2016/06/privacyIDEA-240px@2x.png
@@ -23,7 +34,7 @@ entries:
     version: 1.0.0
   - apiVersion: v2
     appVersion: "3.11"
-    created: "2025-03-02T16:36:17.532233607+01:00"
+    created: "2025-03-03T07:39:25.102227849+01:00"
     description: A Helm chart for deploying PrivacyIDEA with MariaDB and Redis
     digest: df0c5670055c470204088fc7cb4431b86cb96c995bd451efbd1d2cd0a7fe4cb6
     icon: https://www.privacyidea.org/wp-content/uploads/2016/06/privacyIDEA-240px@2x.png
@@ -31,4 +42,4 @@ entries:
     urls:
     - https://gpappsoft.github.io/helm-charts/privacyidea-0.3.0.tgz
     version: 0.3.0
-generated: "2025-03-02T16:36:17.531914481+01:00"
+generated: "2025-03-03T07:39:25.101809235+01:00"
